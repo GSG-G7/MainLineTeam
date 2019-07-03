@@ -1,76 +1,23 @@
 *{
-<<<<<<< HEAD
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
-
-
-.footer__content{
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    border:1px solid #000;
-    min-height: 220px;
-    background-color: rgb(241, 241, 241);
-    margin-top: 100px;
-}
-
-
-
-
-.footer__inform{
-    width: 45%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;    
-    border: 2px solid red;
-    height: calc(100%/3px);
-}
-
-
-.footer__contact{
-    width: 45%;
-    border: 2px solid blue;
-}
-
-.footer__copyright{
-    width: 100%;
-    border:2px solid green;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-=======
     margin: 0;
     padding: 0;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
-     box-sizing: border-box;;
+    box-sizing: border-box;
 }
 /* Main Variables  */
 :root {
---primary-color: #487eb0;
---second-color: #353b48;
---g-font-family:'Nanum Gothic', sans-serif;
---paragraph-color: #7f8c8d;
---header-font:'Nanum Gothic', sans-serif;
-}
-/* Main Variables  */
+    --primary-color: #fbc531;
+    --second-color: #353b48;
+    --g-font-family:'Nanum Gothic', sans-serif;
+    --paragraph-color: #7f8c8d;
+    --header-font:'Nanum Gothic', sans-serif;
+    
+    }
+    
 .container{
-    width: 92.3%;
+    width: 85%;
+    margin: auto;
 }
 
 
@@ -88,4 +35,225 @@
     }
     
 }
->>>>>>> dfae98342fe4e63a75a49616799ad1007a4ab719
+
+/* design team section */ 
+.column {
+    float: left;
+    width: 23%;
+    margin-bottom: 16px;
+    padding: 0 4px;
+  }
+  
+  @media screen and (max-width: 650px) {
+    .column {
+      width: 100%;
+      display: block;
+    }
+  }
+  
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  }
+  
+
+  
+  .container::after, .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+  .title {
+    color: grey;
+  }
+  
+  .button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+  }
+  
+  .button:hover {
+    background-color: #555;
+  }
+/* End design section */ 
+
+/*Start Section Footer*/
+.footer{
+    background-color: var(--second-color);
+    /* background-color: #192a56; */
+    color: #fff;
+    font-size: 15px;
+    font-family: var(--g-font-family);
+    overflow: hidden;
+    padding-top:50px 
+}
+.footer__content{
+    display: flex;
+    justify-content: space-between; 
+    flex-wrap: wrap;
+}
+/* #1 Start section information tne company */
+.footer__content__inform{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+}
+.footer__content__inform__header{
+text-transform: uppercase;
+margin-bottom: 1rem;
+}
+.footer__content__inform__call{
+    display: flex;
+    margin: 10px 0;
+}
+
+.footer__content__inform__call__head{
+    margin: -2px 7px;
+}
+
+.footer__content__inform__icons{
+    margin-top: 5px;
+    cursor:pointer; 
+}
+
+.footer__content__inform__icons .fa{
+    color: #fff;
+    transition: .4s all ease-in-out;
+    margin-right: 20px;
+}
+
+.footer__content__inform__icons .fa-facebook-square:hover{
+    color: #3b5998;
+}
+
+.footer__content__inform__icons .fa-google-plus-square:hover{
+    color: #dd4b39;
+}
+
+.footer__content__inform__icons .fa-twitter-square:hover{
+    color: #1da1f2;
+}
+
+.footer__content__inform__icons .fa-instagram:hover{
+    color: #833ab4;
+}
+
+.footer__content__inform__icons .fa-linkedin-square:hover{
+    color: #0077b5;
+}
+/* #1 End section information tne company */
+/* #2 Start section details tne clients */
+.footer__content__contact__details{
+    width: 30%;
+}
+
+.footer__content__contact__details__form{
+    display: flex;
+    flex-direction: column;
+}
+
+.footer__content__contact__details__form__input{
+    width: 100%;
+    padding: 10px;
+    background-color: #fff;
+    border-color: transparent;
+    border-radius: 5px;
+}
+
+.input--margin-center{
+    margin:27px 0;
+}
+/* #2 End section details tne clients */
+/* #3 Start section Message tne clients */
+.footer__content__contact__message{
+    width: 30%;
+}
+
+.footer__content__contact__message__text{
+    padding: 10px;
+    width: 100%;
+    border-color:transparent;
+    background-color: #fff;
+    resize: none;
+    border-radius:5px;
+    height: 105px;
+    margin-bottom: 27px;
+}
+
+.footer__content__contact__message__btn{
+    width: 100%;
+    padding: 10px;
+    background-color: var(--primary-color);
+    border-color: transparent;
+    border-radius:5px;
+    color:var(--second-color);
+    cursor: pointer;
+    transition: .3s all ease-in-out;
+}
+.footer__content__contact__message__btn:hover{
+    background-color:#d2dae2;
+}
+/* #3 End section Message tne clients */
+/* #4 Start section  Copyright */
+.footer__content__copyright{
+    width: 100%;
+    margin-top: 60px;
+    text-align: center;
+    padding: 10px;
+    background-color: #576574;
+}
+/* #4 End section  Copyright */
+/*End Section Footer*/
+
+
+
+/* Responsive Section */
+@media (max-width:576px ){
+    .container{
+        width: 95%;
+    }
+
+    .footer__content__inform{
+        width: 100%;
+    }
+    .footer__content__contact__details{
+        width: 100%;
+        margin: 40px 0;
+    }
+    .footer__content__contact__message{
+        width: 100%;
+    }
+    
+}
+
+@media (min-width:576.1px) and (max-width:768px){
+    .container{
+        width: 95%;
+    }
+
+/* #1 Start section information tne company */
+.footer__content__inform{
+    width: 60%;
+    margin-left: 30%;
+    line-height: 2;
+    margin-bottom: 40px;
+}
+/* #1 End section information tne company */
+
+.footer__content__contact__details{
+    width: 48%;
+    /* margin: 40px 0; */
+}
+.footer__content__contact__message{
+    width: 48%;
+}
+
+}
+
