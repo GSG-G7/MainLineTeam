@@ -1,0 +1,54 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+.footer__content{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    border:1px solid #000;
+    min-height: 220px;
+    background-color: rgb(241, 241, 241);
+    margin-top: 100px;
+}
+
+
+
+
+.footer__inform{
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;    
+    border: 2px solid red;
+    height: calc(100%/3px);
+}
+
+
+.footer__contact{
+    width: 45%;
+    border: 2px solid blue;
+}
+
+.footer__copyright{
+    width: 100%;
+    border:2px solid green;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
