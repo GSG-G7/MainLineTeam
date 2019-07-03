@@ -1,4 +1,5 @@
 *{
+<<<<<<< HEAD
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -52,3 +53,39 @@
 
 
 
+=======
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+     box-sizing: border-box;;
+}
+/* Main Variables  */
+:root {
+--primary-color: #487eb0;
+--second-color: #353b48;
+--g-font-family:'Nanum Gothic', sans-serif;
+--paragraph-color: #7f8c8d;
+--header-font:'Nanum Gothic', sans-serif;
+}
+/* Main Variables  */
+.container{
+    width: 92.3%;
+}
+
+
+
+@media (max-width:540px ){
+    .container{
+        width: 95%;
+    }
+    
+}
+
+@media (min-width:540.1px) and (max-width:720px){
+    .container{
+        width: 95%;
+    }
+    
+}
+>>>>>>> dfae98342fe4e63a75a49616799ad1007a4ab719
