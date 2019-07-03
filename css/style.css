@@ -1,0 +1,188 @@
+* {
+   margin: 0;
+   padding: 0;
+   -webkit-box-sizing: border-box;
+   -moz-box-sizing: border-box;
+   box-sizing: border-box;
+}
+/* Main Variables  */
+:root {
+   --primary-color: #487eb0;
+   --second-color: #353b48;
+   --g-font-family: 'Nanum Gothic', sans-serif;
+   --paragraph-color: #7f8c8d;
+   --header-font: 'Nanum Gothic', sans-serif;
+}
+
+.container {
+   width: 92.3%;
+}
+body {
+   height: 4000px;
+}
+
+/*  header section */
+
+header {
+   /* font-family:  --header-font ; */
+
+   /* display: flex; */
+   /* flex-wrap: wrap; */
+   background-color: #dcdcdc;
+   font-family: var (--header-font);
+}
+
+/* logo */
+
+.header__logo {
+   flex-basis: 15%;
+}
+
+.header__logo img {
+   width: 100px;
+   height: 100px;
+   text-align: center;
+   margin: auto;
+   display: block;
+   padding-top: 100px;
+}
+
+/* nav */
+nav {
+   display: flex;
+   position: fixed;
+   width: 100%;
+   z-index: 55555;
+   background-color: #ccc;
+   transition: 0.3s all ease-in-out;
+   height: 70px;
+}
+.header__topnav {
+   height: 30px;
+   display: flex;
+   /* margin-top: 30px; */
+   justify-content: space-around;
+   flex-basis: 85%;
+   line-height: 50px;
+}
+.header__topnav a {
+   font-family: var(--header-font);
+   color: primary-color;
+   padding: 14px 16px;
+   text-decoration: none;
+   font-size: 17px;
+}
+
+/*  Slideshow */
+
+.mySlides {
+   display: none;
+   width: 100%;
+
+}
+/* .mySlides__img {
+   width: 100%;
+   height: calc(100vh - 100px); 
+   height: 100vh;
+}
+
+.header__slideshow-container {
+    max-width: 1000px; 
+   margin: auto;
+   flex-basis: 100%;
+    height: 85%; 
+} */
+
+.mySlides:first-of-type{
+   display: block;
+
+}
+
+
+
+
+.mySlides__article{
+   width: 100%;
+   height: 100vh;
+   background-size: cover;
+   padding-top: 250px;
+   color: #fff;
+   font-size: 2.5em;
+
+}
+
+
+
+.mySlides__article__text{
+   font-family: var(--g-font-family);
+   width: 50%;
+   background-color: rgba(0, 0, 0, .8);
+   border: 2px solid var(--primary-color);
+   margin: auto;
+   height: 200px;
+   padding: 10px;
+   text-align: center;
+   border-radius:10px;
+   overflow: hidden;
+   
+}
+
+.slider__item1{
+   background: url(../asset/image/web-design-hero.jpg) no-repeat;
+}
+
+
+.slider__item2{
+   background: url(../asset/image/item2.jpg) no-repeat;
+}
+.slider__item3{
+   background: url(../asset/image/item3.jpg) no-repeat;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* Fading animation */
+.fade {
+   animation-name: fade;
+   animation-duration: 1s;
+}
+
+@keyframes fade {
+   from {
+      opacity: 0.5;
+   }
+   to {
+      opacity: 1;
+   }
+}
+
+/* On smaller screens, decrease text size */
+/* @media only screen and (max-width: 600px) {
+  
+
+   .slideshow-container {
+      width: 90%;
+   }
+} */
+
+/*  */
+@media (max-width: 540px) {
+   .container {
+      width: 95%;
+   }
+}
+
+@media (min-width: 540.1px) and (max-width: 720px) {
+   .container {
+      width: 95%;
+   }
+}
