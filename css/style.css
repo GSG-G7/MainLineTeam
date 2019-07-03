@@ -1,51 +1,140 @@
+*{
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+     box-sizing: border-box;;
+}
+/* Main Variables  */
+:root {
+--primary-color: #fbc531;
+--second-color: #353b48;
+--g-font-family:'Nanum Gothic', sans-serif;
+--paragraph-color: #7f8c8d;
+--header-font:'Nanum Gothic', sans-serif;
+--subheadings-color:#44bd32;
+}
+/* Main Variables  */
+.container{
+    width: 92.3%;
+    margin: auto;
+}
 
+@media (max-width:576px ){
+    .container{
+        width: 95%;
+    }
+    
+}
+
+@media (min-width:576.1px) and (max-width:768px){
+    .container{
+        width: 95%;
+    }
+}
 /* design team section */ 
-.column {
-    float: left;
+.team {
+    margin: 0 auto;
+}
+
+.team .Sectiontitle{
+    text-align: center;
+    margin-bottom: 10px;
+    color:var(--second-color); 
+    font-family:var(--g-font-family);
+    font-size: 36px;
+}
+.team .row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+}
+.team .column {
     width: 23%;
     margin-bottom: 16px;
-    padding: 0 4px;
+    padding: 15px 5px;
+    line-height: 1.5;
   }
-  
-  @media screen and (max-width: 650px) {
-    .column {
-      width: 100%;
-      display: block;
-    }
-  }
-  
-  .card {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  }
-  
 
-  .container {
-    padding: 0 16px;
+  @media (max-width:576px ){
+    .team .column {
+        width: 100%;
+      } 
+}
+@media (min-width:576.1px) and (max-width:768px){
+    .team .column {
+        width: 48%;
+      } 
+}
+  
+  .team .card {
+    box-shadow: 0 4px 8px 0 var(--paragraph-color);
+    min-height: 300px;
+    border-radius: 5%;
+    padding-top: 18px;
+    transition: 0.5s all ease;
+    padding: 25px 10px;
   }
   
-  .container::after, .row::after {
-    content: "";
-    clear: both;
-    display: table;
-  }
-  
-  .title {
-    color: grey;
-  }
-  
-  .button {
-    border: none;
-    outline: 0;
-    display: inline-block;
-    padding: 8px;
-    color: white;
-    background-color: #000;
+  .team .card .card-detials{
     text-align: center;
-    cursor: pointer;
-    width: 100%;
+    margin-top: 20px;
+  }
+  team .card .card-detials p{
+      color: var(--paragraph-color);
+      font-family: var(--g-font-family);
+  }
+  .team h2 {
+    color:var(--second-color); 
+    font-family: var(--header-font);
   }
   
-  .button:hover {
-    background-color: #555;
+  .team .title {
+    color: var(--second-color);
+    padding-bottom: 10px;
   }
+  .team img {
+    width: 100px;
+    height: 100px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 10px;
+    border-radius: 50%;
+  }
+  
+  .team .socialicons {
+    display: inline;
+  }
+  .fa-facebook,.fa-twitter,.fa-instagram,.fa-linkedin,.fa-whatsapp {
+    font-size: 25px;
+    padding: 4px;
+    border-radius: 30px;
+    margin-top:8px;
+    }
+    .team .card:hover{
+        background-color:var(--second-color);
+        color: #ffffff !important;
+
+    }
+    .team .card:hover h2{     
+        color: var(--primary-color) !important;
+    } 
+    .team .card:hover .title{     
+        color: var(--subheadings-color);
+    } 
+    .team .card:hover img{     
+        transform: scale(1.2);
+        border:3px solid #fff;
+        transition: 0.3s all ease;
+    } 
+    
+
+    .fa-facebook{color:#3b5998;}
+    .fa-twitter{color:#1da1f2;}
+    .fa-instagram{color:#833ab4}
+    .fa-linkedin{color:#0077b5}
+    .fa-whatsapp{color:#25d366}
 /* End design section */ 
+
