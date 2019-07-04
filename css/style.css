@@ -153,21 +153,21 @@ margin-bottom: 1rem;
     }
 
 /* #1 Start section information tne company */
-.footer__content__inform{
-    width: 60%;
-    margin-left: 30%;
-    line-height: 2;
-    margin-bottom: 40px;
-}
+    .footer__content__inform{
+        width: 60%;
+        margin-left: 30%;
+        line-height: 2;
+        margin-bottom: 40px;
+    }
 /* #1 End section information tne company */
 
-.footer__content__contact__details{
-    width: 48%;
-    /* margin: 40px 0; */
-}
-.footer__content__contact__message{
-    width: 48%;
-}
+    .footer__content__contact__details{
+        width: 48%;
+        /* margin: 40px 0; */
+    }
+    .footer__content__contact__message{
+        width: 48%;
+    }
 
 }
 
