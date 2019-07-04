@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 (() => {
    let slideIndex = 1;
 
@@ -31,12 +31,13 @@
          } else {
             document.querySelector('nav').style.height = '50px';
             document.querySelector('nav').style.opacity = '.7';
+            document.querySelector('nav').style.backgroundColor = 'white';
             document.querySelector('.header__topnav').style.lineHeight = '30px';
          }
       };
    }
 })();
-=======
+/*===========> About Us animation <=========== */
     // get the element to animate
 var element = document.getElementsByClassName('box');
 var elementHeight = element[0].clientHeight-500;
@@ -73,10 +74,10 @@ function animate() {
       for(let i = 0 ; i< element.length ; ++i){
         element[i].classList.add('animated','animatedFadeInUp','fadeInUp','opacity-1');
       }
-      
   }
 }
-// ===== Scroll to Top ==== 
+/*===========> End of About Us animation <=========== */
+/*===========> Scroll to Top <=========== */
 var timeOut;
 function scrollToTop() {
     if (document.body.scrollTop!=0 || document.documentElement.scrollTop!=0){
@@ -85,4 +86,4 @@ function scrollToTop() {
     }
     else clearTimeout(timeOut);
 }
->>>>>>> cc87f99852904302c78fb401926a0f663562911f
+/*===========> End of Scroll to Top <=========== */
