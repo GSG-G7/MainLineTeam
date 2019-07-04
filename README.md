@@ -1,6 +1,11 @@
 # MainLineTeam portfolio
-One-page portfolio website for our company 
+One-page portfolio website to introduce our company.
 
+## TEAM NAMES:
+- Fadi ElAmassi
+- Fares ElHelo
+- Mohameed Qarmout
+- Asmaa Thabet
 
 ## WHY?
  we make our portfolio website to market ourselves for our clients and to let others contact with us easily.
@@ -43,6 +48,14 @@ We divided our project in to Stages:
 * collecting parts : 
 <br> We started to collect sections together .
 
+* checking and Fixing issues : 
+<br> Solve The issues that appears and take suggestions in mind and try to add it all to have a great website . 
+
+## User Journey
+* The User open our portifilo page and see navbar and headings . 
+* The User scroll to see about section that identify us .
+* The User scroll to see Our Team Section . 
+* The User reach to footer section that have the contact form , our address and contacts . 
 
 
 ## User Stories
