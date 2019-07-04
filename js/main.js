@@ -1,3 +1,43 @@
+
+(() => {
+   let slideIndex = 1;
+
+   //****************
+
+   setInterval(() => {
+      showSlides((slideIndex += 1));
+   }, 2500);
+
+   //****************
+   function showSlides(n) {
+      let slides = document.getElementsByClassName('mySlides');
+      if (n > slides.length) {
+         slideIndex = 1;
+      }
+      if (n < 1) {
+         slideIndex = slides.length; // 3 for now ===> fix it later
+      }
+      for (i = 0; i < slides.length; i++) {
+         slides[i].style.display = 'none';
+      }
+
+      slides[slideIndex - 1].style.display = 'block';
+
+      window.onscroll = function() {
+         if (window.scrollY == 0) {
+            document.querySelector('nav').style.height = '70px';
+            document.querySelector('nav').style.opacity = '1';
+            document.querySelector('.header__topnav').style.lineHeight = '50px';
+         } else {
+            document.querySelector('nav').style.height = '50px';
+            document.querySelector('nav').style.opacity = '.7';
+            document.querySelector('nav').style.backgroundColor = 'white';
+            document.querySelector('.header__topnav').style.lineHeight = '30px';
+         }
+      };
+   }
+})();
+/*===========> About Us animation <=========== */
     // get the element to animate
 var element = document.getElementsByClassName('box');
 var elementHeight = element[0].clientHeight-500;
@@ -34,10 +74,10 @@ function animate() {
       for(let i = 0 ; i< element.length ; ++i){
         element[i].classList.add('animated','animatedFadeInUp','fadeInUp','opacity-1');
       }
-      
   }
 }
-// ===== Scroll to Top ==== 
+/*===========> End of About Us animation <=========== */
+/*===========> Scroll to Top <=========== */
 var timeOut;
 function scrollToTop() {
     if (document.body.scrollTop!=0 || document.documentElement.scrollTop!=0){
@@ -46,3 +86,4 @@ function scrollToTop() {
     }
     else clearTimeout(timeOut);
 }
+/*===========> End of Scroll to Top <=========== */
