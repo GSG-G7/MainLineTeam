@@ -1,6 +1,6 @@
 (() => {
    let slideIndex = 1;
-
+// 
    //****************
 
    setInterval(() => {
